@@ -1,0 +1,8 @@
+# Libraries for hardware build (not needed in WOKWI_SIMULATION mode).
+# Wokwi has no native BME280 or AS3935 simulator chips; sensor I/O is
+# fully mocked in firmware via #ifdef WOKWI_SIMULATION guards.
+#
+# Uncomment below only if compiling the hardware build in Wokwi CI.
+# Adafruit BME280 Library
+# Adafruit Unified Sensor
+# SparkFun AS3935 Lightning Detector Arduino Library
