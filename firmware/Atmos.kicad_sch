@@ -2848,6 +2848,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -8361,6 +8511,12 @@
 		(uuid "e257efc2-5694-4333-bdcc-9f93b34f9136")
 	)
 	(junction
+		(at 152.4 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6607f9e-33b8-415d-992f-6f0a32d1cef0")
+	)
+	(junction
 		(at 139.7 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8649,6 +8805,16 @@
 			(type default)
 		)
 		(uuid "4345d59c-3dd1-4004-aaa7-50ea1f2a07c8")
+	)
+	(wire
+		(pts
+			(xy 151.13 66.04) (xy 152.4 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4acaef20-3c73-40b2-b40d-c7e00d3bc76f")
 	)
 	(wire
 		(pts
@@ -9007,6 +9173,28 @@
 		(uuid "28f095a8-af87-41cd-81fa-0ccae05931e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 69.85 44.0048 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSOL"
+		(shape input)
+		(at 166.37 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ae8ea92-043e-4b64-9a91-c56369320584")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 174.0119 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10268,6 +10456,28 @@
 			)
 		)
 	)
+	(global_label "VSOL"
+		(shape input)
+		(at 151.13 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f803bcdc-8eea-4985-8278-14c7c2d21859")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.4881 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SD_MOSI"
 		(shape input)
 		(at 58.42 161.29 0)
@@ -10671,7 +10881,7 @@
 	(symbol
 		(lib_name "Conn_01x02_1")
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 137.16 -45.72 0)
+		(at 165.1 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10680,7 +10890,7 @@
 		(fields_autoplaced yes)
 		(uuid "09770e49-be81-449d-94c4-9c0c22a3710e")
 		(property "Reference" "J5"
-			(at 138.938 -44.958 0)
+			(at 166.878 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10689,7 +10899,7 @@
 			)
 		)
 		(property "Value" "Solar power input"
-			(at 145.796 -36.068 90)
+			(at 173.736 78.232 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10698,7 +10908,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 -45.72 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10707,7 +10917,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 -45.72 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10716,7 +10926,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 -45.72 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11473,6 +11683,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener")
+		(at 152.4 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "21f33538-3945-4ccb-80c2-b3721528e3ae")
+		(property "Reference" "D6"
+			(at 148.336 60.706 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "8V"
+			(at 148.336 62.484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 152.4 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "75a30960-8243-4499-b096-5368dd378ea5")
+		)
+		(pin "1"
+			(uuid "3e0a7781-02ee-40d8-a962-c41801a8e4fa")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_US")
 		(at 33.02 57.15 90)
 		(mirror x)
@@ -12018,6 +12297,73 @@
 			(project "Atmos_sense"
 				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 58.42 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a2dd365-adfb-4467-bc85-605b5042eaac")
+		(property "Reference" "#PWR035"
+			(at 152.4 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.3999 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12a7a31c-70ef-4794-bbc4-62452ebd239b")
+		)
+		(instances
+			(project "Atmos"
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -15236,6 +15582,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 166.37 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bdcbcf6-d34c-44c9-b1e4-d74325a0744f")
+		(property "Reference" "#FLG04"
+			(at 164.465 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 162.56 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 166.37 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8446c68-e9ef-4e67-a30e-1c0460d2e88e")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 203.2 83.82 0)
 		(unit 1)
@@ -15971,7 +16383,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
-		(at 140.97 -71.12 0)
+		(at 152.4 -81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15980,7 +16392,7 @@
 		(fields_autoplaced yes)
 		(uuid "b1b44b2d-10f7-48cb-940b-380b393547ae")
 		(property "Reference" "U8"
-			(at 142.6211 -78.74 0)
+			(at 154.0511 -88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15989,7 +16401,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 142.6211 -76.2 0)
+			(at 154.0511 -86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15998,7 +16410,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 142.24 -64.77 0)
+			(at 153.67 -74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16009,7 +16421,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
-			(at 142.24 -62.865 0)
+			(at 153.67 -73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16019,7 +16431,7 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
-			(at 140.97 -71.12 0)
+			(at 152.4 -81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16406,6 +16818,73 @@
 			(project "Atmos"
 				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0d40a6f-0c01-4efc-b05f-02aeb456f977")
+		(property "Reference" "#PWR033"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68b81d0f-04c0-4f75-b3a7-20eec7cf31e9")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -16908,34 +17387,31 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 109.22 -91.44 0)
+		(at 156.21 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d4b19c50-3ab2-40df-a021-1b712b96389a")
 		(property "Reference" "F1"
-			(at 111.76 -92.7101 0)
+			(at 156.21 64.262 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Polyfuse"
-			(at 111.76 -90.1701 0)
+			(at 156.464 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 -86.36 0)
+			(at 161.29 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16945,7 +17421,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 -91.44 0)
+			(at 156.21 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16954,7 +17430,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 109.22 -91.44 0)
+			(at 156.21 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16969,7 +17445,7 @@
 			(uuid "87a38644-379f-49ca-8487-419665b42fb7")
 		)
 		(instances
-			(project ""
+			(project "Atmos"
 				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
 					(reference "F1")
 					(unit 1)
