@@ -15077,7 +15077,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1pF"
+		(property "Value" "100nF"
 			(at 189.23 30.7339 0)
 			(effects
 				(font
@@ -15145,7 +15145,7 @@
 				)
 			)
 		)
-		(property "Value" "470k"
+		(property "Value" "1M"
 			(at 203.962 74.422 90)
 			(effects
 				(font
@@ -18965,7 +18965,7 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "1uF"
 			(at 114.046 97.536 90)
 			(effects
 				(font

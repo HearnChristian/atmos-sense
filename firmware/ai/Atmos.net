@@ -1,7 +1,7 @@
 (export (version "E")
   (design
     (source "/home/christian-thomas-hearn/Desktop/atmos-sense/firmware/Atmos.kicad_sch")
-    (date "2026-06-07T00:43:39-0500")
+    (date "2026-06-09T20:39:01-0500")
     (tool "Eeschema 9.0.7")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
@@ -120,7 +120,7 @@
       (sheetpath (names "/") (tstamps "/"))
       (tstamps "cd9de297-db38-430c-ab03-8f5320e1bda1"))
     (comp (ref "C6")
-      (value "100uF")
+      (value "1uF")
       (description "capacitor, US symbol")
       (fields
         (field (name "Footprint"))
@@ -274,7 +274,7 @@
       (sheetpath (names "/") (tstamps "/"))
       (tstamps "24e54e62-93d1-41db-8595-5a9eb2fdda12"))
     (comp (ref "C17")
-      (value "0.1pF")
+      (value "100nF")
       (description "capacitor, US symbol")
       (fields
         (field (name "Footprint"))
@@ -647,7 +647,7 @@
       (sheetpath (names "/") (tstamps "/"))
       (tstamps "c36f41c9-d0ef-412d-a98d-047d9a284e53"))
     (comp (ref "R3")
-      (value "470k")
+      (value "1M")
       (datasheet "~")
       (description "Resistor, US symbol")
       (fields
