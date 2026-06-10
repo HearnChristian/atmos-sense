@@ -9136,6 +9136,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 55.88) (xy 121.92 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7454210e-b11c-4c70-9ea0-c6418bdba037")
+	)
+	(wire
+		(pts
 			(xy 195.58 78.74) (xy 195.58 81.28)
 		)
 		(stroke
@@ -9456,22 +9466,22 @@
 	)
 	(global_label "+VBATT"
 		(shape input)
-		(at 127 41.91 180)
+		(at 121.92 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "07181a02-6a24-4f8d-837c-87e886074c48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.06 41.91 0)
+			(at 131.86 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -10730,7 +10740,7 @@
 	)
 	(global_label "+VBATT"
 		(shape input)
-		(at 127 39.37 180)
+		(at 119.38 46.99 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10740,7 +10750,7 @@
 		)
 		(uuid "7f355783-dd2b-4ea9-b0bc-d77af2662952")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.06 39.37 0)
+			(at 119.38 56.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12337,7 +12347,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 127 39.37 270)
+		(at 119.38 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12346,7 +12356,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ab1db4e-0f0d-4719-a2de-df06c19789d5")
 		(property "Reference" "#FLG05"
-			(at 128.905 39.37 0)
+			(at 119.38 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12355,7 +12365,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 130.81 39.3699 90)
+			(at 119.3799 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12364,7 +12374,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 39.37 0)
+			(at 119.38 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12373,7 +12383,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 39.37 0)
+			(at 119.38 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12382,7 +12392,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 127 39.37 0)
+			(at 119.38 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16719,7 +16729,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 132.08 41.91 0)
+		(at 121.92 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16728,7 +16738,7 @@
 		(fields_autoplaced yes)
 		(uuid "72f94499-6520-4ed5-8041-a2093dd88e78")
 		(property "Reference" "BT2"
-			(at 134.62 41.9099 0)
+			(at 121.9199 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16737,7 +16747,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 134.62 44.4499 0)
+			(at 124.4599 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16746,7 +16756,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 41.91 0)
+			(at 121.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16755,7 +16765,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 41.91 0)
+			(at 121.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16764,7 +16774,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 132.08 41.91 0)
+			(at 121.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17956,6 +17966,74 @@
 			(project ""
 				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
 					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 121.92 50.8 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8bd5d6e1-dcf1-42e4-9941-6446443290a0")
+		(property "Reference" "F2"
+			(at 124.46 53.086 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3A"
+			(at 126.238 53.086 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 121.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d961219-4802-42eb-bfc0-73d6c0258ec0")
+		)
+		(pin "1"
+			(uuid "54fe5776-7de6-4310-af72-287e9ada8116")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -21033,7 +21111,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 44.45 270)
+		(at 124.46 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21042,7 +21120,7 @@
 		(fields_autoplaced yes)
 		(uuid "cefd17d4-01e7-4370-b54d-934a66107a53")
 		(property "Reference" "#PWR034"
-			(at 120.65 44.45 0)
+			(at 124.46 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21051,7 +21129,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 44.4499 90)
+			(at 124.4599 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21061,7 +21139,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 44.45 0)
+			(at 124.46 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21070,7 +21148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 44.45 0)
+			(at 124.46 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21079,7 +21157,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 44.45 0)
+			(at 124.46 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
