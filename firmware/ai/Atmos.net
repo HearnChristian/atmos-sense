@@ -1,7 +1,7 @@
 (export (version "E")
   (design
     (source "/home/christian-thomas-hearn/Desktop/atmos-sense/firmware/Atmos.kicad_sch")
-    (date "2026-06-09T20:47:09-0500")
+    (date "2026-07-13T14:29:17-0600")
     (tool "Eeschema 9.0.7")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
@@ -527,13 +527,13 @@
       (sheetpath (names "/") (tstamps "/"))
       (tstamps "09770e49-be81-449d-94c4-9c0c22a3710e"))
     (comp (ref "J6")
-      (value "Conn_Coaxial")
-      (datasheet "~")
-      (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+      (value "Amphenol 132134")
+      (datasheet "https://www.amphenolrf.com/132134.html")
+      (description "SMA coaxial jack, 50 ohm, vertical PCB through-hole (LoRa antenna)")
       (fields
         (field (name "Footprint"))
-        (field (name "Datasheet") "~")
-        (field (name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"))
+        (field (name "Datasheet") "https://www.amphenolrf.com/132134.html")
+        (field (name "Description") "SMA coaxial jack, 50 ohm, vertical PCB through-hole (LoRa antenna)"))
       (libsource (lib "Connector") (part "Conn_Coaxial") (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"))
       (property (name "Sheetname") (value ""))
       (property (name "Sheetfile") (value "firmware/Atmos.kicad_sch"))

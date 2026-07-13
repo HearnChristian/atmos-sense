@@ -13294,7 +13294,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "Amphenol 132134"
 			(at 262.89 160.9969 0)
 			(effects
 				(font
@@ -13312,7 +13312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.amphenolrf.com/132134.html"
 			(at 266.7 162.56 0)
 			(effects
 				(font
@@ -13321,7 +13321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "SMA coaxial jack, 50 ohm, vertical PCB through-hole (LoRa antenna)"
 			(at 266.7 162.56 0)
 			(effects
 				(font
