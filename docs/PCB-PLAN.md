@@ -49,24 +49,29 @@ both on modules, not board-printed).
 - 41 passives → default 0603 (0805 for bulk caps), same as radar flow.
 - Semis with known packages (D4 Schottky, Q1-3 PMOS, D1 LED, D6 zener,
   F1/F2 fuses) → straightforward picks, I'll propose in the pass.
-- **Connector decisions (need your input):**
-  - J3 USB-C: HRO TYPE-C-31-M-12 (the cheap 16-pin, KiCad stock fp)?
-  - J4 microSD: push-push (e.g. GCT MEM2075) or hinged?
-  - BT1/BT2 battery: JST-PH 2-pin right-angle?
-  - J5 solar input: JST-PH or barrel jack?
-  - PMS5003: its mating 1.25 mm 8-pin (PicoBlade-style) header?
-  - J6 LoRa antenna: u.FL (compact) or SMA edge (robust)?
-  - J1/J2 breakout headers: 2.54 mm sockets?
+- **Connector decisions (RATIFIED 2026-07-13):**
+  - J3 USB-C: HRO TYPE-C-31-M-12 (KiCad stock fp) ✓
+  - J4 microSD: push-push, GCT MEM2075 ✓
+  - BT1 = DS3231M VBAT backup -> CR2032 SMD holder (Keystone 3034);
+    Christian's DS3231 breadboard modules carry their own LIR2032 —
+    the board needs its own holder + a CR2032 on the BOM.
+  - BT2 main battery: JST-PH 2-pin right-angle (Li-ion single cell)
+  - J5 solar input: JST-XH 2-pin — different family than the battery ON
+    PURPOSE so panel and pack can't be cross-plugged.
+  - PMS5003: Molex PicoBlade 53398-0871 (1.25 mm 8-pin, its native mate)
+  - J6 LoRa antenna: SMA vertical THT + 915 MHz whip (none owned yet;
+    u.FL rejected: ~30 mating cycles, needs a pigtail anyway in a box)
+  - J1/J2 breakout headers: 2.54 mm female sockets ✓
 - U7 RFM95W and SW1 also lack footprints (RFM95W = 16×16 castellated,
   I can build it; SW1 needs a part pick).
 
-## 4. Open questions before board-gen
+## 4. Status
 
-1. Ratify 4-layer, ~65×50 mm, and the floorplan above?
-2. Enclosure/mounting: hole pattern, corner radii, max height constraints?
-   (Outdoor/solar suggests an IP-rated box — which one?)
-3. Connector picks from §3.
-4. PMS5003 mounted off-board via cable (assumed) or board-carried?
+Stackup (4-layer), size (~65×50), floorplan and connectors ratified
+2026-07-13. Enclosure still TBD -> plan for 4× M3 holes, 3.5 mm from each
+corner, and revisit the outline when a box is chosen. PMS5003 assumed
+off-board via cable. **Next: footprint pass (60 parts), then board-gen
+with the radar toolchain.**
 
 Once ratified, the radar toolchain (board_gen / route_pcb / route_signals /
 route_finish) gets pointed at this project.
