@@ -8737,10 +8737,6 @@
 		(uuid "33ea20a3-b1db-47ef-a99d-4232a9b62c34")
 	)
 	(no_connect
-		(at 111.76 57.15)
-		(uuid "34153aaa-6165-4826-87cb-742285da15e4")
-	)
-	(no_connect
 		(at 111.76 29.21)
 		(uuid "360c0998-3f7a-40f3-8932-aa6a34533198")
 	)
@@ -8803,14 +8799,6 @@
 	(no_connect
 		(at 64.77 68.58)
 		(uuid "8e4f0674-dff1-4d49-ad83-a2b78174a293")
-	)
-	(no_connect
-		(at 81.28 85.09)
-		(uuid "966ef905-ccf4-4396-9803-a0ae57043184")
-	)
-	(no_connect
-		(at 111.76 54.61)
-		(uuid "9a1fb88d-4dfa-4b71-b415-1431c77c75f8")
 	)
 	(no_connect
 		(at 118.11 176.53)
@@ -8879,10 +8867,6 @@
 	(no_connect
 		(at 81.28 82.55)
 		(uuid "f9c6482c-9d91-4a7b-b6b3-9deb7bcc5fa2")
-	)
-	(no_connect
-		(at 111.76 59.69)
-		(uuid "fc7b55ee-0dd0-4fc1-b327-fe2b90a1207e")
 	)
 	(wire
 		(pts
@@ -10102,6 +10086,94 @@
 			)
 		)
 	)
+	(global_label "IO14"
+		(shape input)
+		(at 111.76 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40c78e13-ef9d-4a4d-af16-86d5724c6613")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.9 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IO15"
+		(shape input)
+		(at 111.76 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e0a90b86-91df-4df1-b26a-11d4a28f6674")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.9 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IO16"
+		(shape input)
+		(at 111.76 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fcdf44f2-e40d-4a2c-8c94-c8dae0a05bd5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.9 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "STATUS_LED"
+		(shape input)
+		(at 81.28 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0605a6bc-47b2-4cd7-8a7e-b262907a7e79")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.8 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_DM"
 		(shape input)
 		(at 81.28 90.17 180)
@@ -10124,7 +10196,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "STATUS_LED"
 		(shape input)
 		(at 36.83 30.48 0)
 		(fields_autoplaced yes)
@@ -12772,7 +12844,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF"
 			(at 95.504 135.89 90)
 			(effects
 				(font
@@ -15872,7 +15944,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "12k"
 			(at 97.79 125.73 90)
 			(effects
 				(font
@@ -15992,7 +16064,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 25.4 30.48 180)
+		(at 25.4 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17929,7 +18001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_1008HQ_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_Bourns-SRN4018"
 			(at 234.95 134.62 0)
 			(effects
 				(font
@@ -22519,6 +22591,745 @@
 			)
 		)
 	)
+(symbol
+		(lib_id "Device:C_US")
+		(at 257.81 139.7 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5844d04a-1be5-414a-a4e2-e410b3bc8169")
+		(property "Reference" "C22"
+			(at 258.826 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 256.286 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 257.81 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 257.81 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89b9910a-0ed1-4485-b486-274a9527964c")
+		)
+		(pin "2"
+			(uuid "58f17040-b122-43cc-9019-ccd0942f79f9")
+		)
+		(instances
+			(project "Atmos"
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)	(symbol
+		(lib_id "power:GND")
+		(at 261.62 139.7 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0549e02c-ed12-4a90-97e9-a9e7d4545abf")
+		(property "Reference" "#PWR064"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 261.62 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ebfa027-9a4d-428e-9db8-83a6cf30e45a")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape input)
+		(at 254 139.7 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2b94783a-a441-4855-98dd-de16b8284309")
+	)
+	(symbol
+		(lib_id "Device:C_US")
+		(at 241.3 27.94 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ae863de-e445-47b6-85f2-2f6d8222cf6e")
+		(property "Reference" "C23"
+			(at 242.316 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 239.776 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 241.3 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 241.3 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "314e6162-33fd-4c70-9d95-a68ce04c76dc")
+		)
+		(pin "2"
+			(uuid "f878fb15-7942-4753-8ca5-ee2162fd4214")
+		)
+		(instances
+			(project "Atmos"
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+5V_PMS"
+		(shape input)
+		(at 237.49 27.94 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4f91ebaf-6dd1-46c0-9e59-fbef307034e2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.11 27.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c54210d-96d6-4fe5-ad50-b24cd38fd6b0")
+		(property "Reference" "#PWR065"
+			(at 245.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e2f1481-9a47-4f35-a408-8a18893bb020")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_US")
+		(at 55.88 133.35 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ae12bc5-40ef-4811-9dca-91d7ff18a07b")
+		(property "Reference" "C24"
+			(at 56.896 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 54.356 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c6e29e8-d300-4b7f-a84e-8c7e1c3b3fe0")
+		)
+		(pin "2"
+			(uuid "c6659c1d-06a1-445d-b98a-98325bf399a7")
+		)
+		(instances
+			(project "Atmos"
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBUS"
+		(shape input)
+		(at 52.07 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a019d366-673e-43b1-9033-28c6df5c8e81")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 133.35 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab2b2c0b-79f0-4972-be9f-10946e2ea171")
+		(property "Reference" "#PWR066"
+			(at 59.69 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 59.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fcefc76-2f86-4a93-a934-0483e836410f")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_US")
+		(at 80.01 57.15 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd5d2675-01c9-4fa3-b86e-ae256fbd4c66")
+		(property "Reference" "C25"
+			(at 81.026 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 78.486 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 80.01 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 80.01 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8312100-7b57-477f-8f70-55b9f323ed3f")
+		)
+		(pin "2"
+			(uuid "94325fed-81af-4843-b066-9c8397234928")
+		)
+		(instances
+			(project "Atmos"
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 69.85 57.15)
+			(xy 76.2 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb38adbf-b8e7-49d4-8ee6-ad47293e14fa")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 57.15 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9e6d25b-edf6-4e60-b542-a38aab6929eb")
+		(property "Reference" "#PWR067"
+			(at 83.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4690688b-9760-4f98-aa8d-4afdd3587551")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "Device:C_US")
+		(at 180.34 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e5169bf-eeeb-4498-957e-e397f2d5f5af")
+		(property "Reference" "C26"
+			(at 172.72 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 172.72 64.008 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "233e1b9f-2a13-449c-98e5-1715269f73f0")
+		)
+		(pin "1"
+			(uuid "f2c15818-0657-4b1c-b740-e49a6a2bcd11")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)	(symbol
+		(lib_id "power:GND")
+		(at 180.34 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed457a89-8dd8-4c67-aa99-d8cb36e286e1")
+		(property "Reference" "#PWR068"
+			(at 180.34 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.34 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 180.34 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "990363da-9fc9-42dc-b312-5dbbd9b8b40c")
+		)
+		(instances
+			(project ""
+				(path "/821c823f-0cdf-48e4-87e1-02b442913dca"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VSOL"
+		(shape input)
+		(at 180.34 67.31 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+				(justify right)
+		)
+		(uuid "cf1a1ca5-cb25-46e6-923f-11ef1e137ccf")
+	)
+
 	(sheet_instances
 		(path "/"
 			(page "1")
