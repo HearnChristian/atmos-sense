@@ -1,7 +1,7 @@
 (export (version "E")
   (design
     (source "/home/christian-thomas-hearn/Desktop/atmos-sense/firmware/Atmos.kicad_sch")
-    (date "2026-07-20T12:21:51-0600")
+    (date "2026-07-21T19:17:18-0600")
     (tool "Eeschema 9.0.7")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
@@ -556,7 +556,7 @@
       (sheetpath (names "/") (tstamps "/"))
       (tstamps "8bd5d6e1-dcf1-42e4-9941-6446443290a0"))
     (comp (ref "J1")
-      (value "AS3935 breakout")
+      (value "AS3935 header (SEN-39003)")
       (footprint "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical")
       (datasheet "~")
       (description "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)")

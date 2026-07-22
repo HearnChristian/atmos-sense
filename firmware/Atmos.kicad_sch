@@ -20839,7 +20839,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS3935 breakout"
+		(property "Value" "AS3935 header (SEN-39003)"
 			(at 115.316 14.986 90)
 			(effects
 				(font

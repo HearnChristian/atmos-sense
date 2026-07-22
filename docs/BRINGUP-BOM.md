@@ -10,7 +10,7 @@ Board-level chips/passives are NOT here; they come with the PCB fab BOM.
 | 2 | Antenna for that radio | 915 MHz whip with **SMA male** plug (e.g. Linx ANT-916-CW-HWR-SMA) |
 | 3 | Antenna jack on the board | **Amphenol 132134** SMA jack, vertical through-hole (now on the schematic BOM as J6) |
 | 4 | Air-quality dust sensor | Plantower **PMS5003** (ships with its 1.25 mm 8-pin cable) |
-| 5 | Lightning detector board | **AS3935** breakout (SparkFun SEN-15441 or DFRobot equivalent) — plugs into header J1 |
+| 5 | Lightning detector board | **Playing With Fusion SEN-39003** (AS3935, factory-calibrated) — plugs into header J1 via 0.1″ header or Qwiic→SDA/SCL. **Do not buy Amazon CJMCU clones** (common dead-antenna units). SparkFun SEN-15441 is a SPI-first fallback if PWF is out of stock. Source: https://www.playingwithfusion.com/productview.php?pdid=135 |
 | 6 | Gas/odor (VOC) sensor for prototyping | Adafruit **SGP40** breakout #4829 (the bare SGP40-D-R4 chip is on the fab BOM) |
 | 7 | Watch battery that keeps the clock alive | **CR2032** coin cell (its board holder, Keystone 3034, is on the fab BOM) |
 | 8 | Main rechargeable battery | 1-cell LiPo ~2500 mAh with **JST-PH** plug (e.g. Adafruit #328/#2011 class) |

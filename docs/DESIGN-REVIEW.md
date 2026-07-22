@@ -82,9 +82,10 @@ fab before this is resolved.**
 - **M5. No UART header/testpoints on TXD0/RXD0.** Native-USB-only debug — and
   the bench already proved native USB CDC drops during deep sleep. A 3-pin
   TX/RX/GND header (or testpoints) will save real pain in sleep-cycle debug.
-- **M6. AS3935 header assumes I²C mode** with SI/CS/EN floating — correct for
-  some breakouts, wrong for others (mode straps differ). Verify the specific
-  breakout's jumpers when it arrives (bring-up note, not a board bug).
+- **M6. AS3935 header assumes I²C mode** with SI/CS/EN floating. Preferred
+  module is **Playing With Fusion SEN-39003** (I²C via Qwiic or header; load
+  the printed antenna cal pF in firmware). SparkFun SEN-15441 is SPI-first.
+  Verify pin map vs J1 when wiring — not a 1:1 pin-order assumption.
 - **M7. AP2112K dropout note:** with VBATT < ~3.55 V under combined load
   (ESP32 + RFM TX + SD write ≈ 300 mA+), the 3V3 rail sags below 3.3 V.
   Parts all run to 3.0 V so it degrades gracefully — accepted tradeoff; a
